@@ -1,0 +1,258 @@
+* {
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+.ic {
+	width: 100%;
+	font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif
+	color: #4b4f54;
+}
+
+.ic-nav {
+	width: 100%;
+	height: 78px;
+	background-color: #FFFFFF;
+}
+
+
+.ic-body {
+	width: 100%;
+	background-color: #FAFAFA;;
+}
+
+.ic-body-ctn,
+.ic-nav-ctn {
+	margin: 0 auto;
+	display: flex;
+	max-width: 600px;
+}
+
+.ic-body-ctn {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.ic-nav-title {
+	margin: 26px 0 26px 0;
+	height: 28px;
+	width: 25%;
+}
+
+.ic-nav-title-img {
+	background-image: url("instaclone.png");
+	background-position: 0 -132px;
+	background-repeat: no-repeat;
+	background-size: 268px 237px;
+	height: 28px;
+	width: 105px;
+}
+
+.ic-nav-search {
+	margin: 26px 0 26px 0;
+	height: 25px;
+	width: 50%;
+}
+
+.ic-nav-search-input {
+	outline: none;
+	margin: 0 15% 0 15%;
+	width: 70%;
+	height: 100%;
+	background-color: #FAFAFA;
+	border: 1px #edeeee solid;
+	padding: 2px 10px 2px 10px;
+	border-radius: 15px;
+	text-align: center;
+	/*color: #818488;*/
+	font-size: 14px;
+  font-weight: 200;
+}
+
+@media (max-width: 475px) {
+	.ic-nav-search {
+		display: none;
+	}
+}
+
+.ic-nav-name {
+	color: #125688;
+	margin: 26px 0 26px 0;
+	padding: 3px 2px 3px 2px;
+	height: 25px;
+	width: 25%;
+	text-align: right;
+}
+
+.ic-body-card-ctn:first-child {
+	margin-top: 60px;
+}
+
+.ic-body-card-ctn {
+	width: 100%;
+	background-color: white;
+  border: 1px solid #edeeee;
+  border-radius: 3px;
+  margin-bottom: 60px;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.ic-body-card-header {
+	padding: 14px 20px 14px 20px;
+	height: 64px;
+	background-color: #FFF;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.ic-body-card-header-img {
+	margin: auto;
+	margin-right: 10px;
+	height: 30px;
+	flex: 0 0 30;
+	border-radius: 15px;
+}
+
+.ic-body-card-header-name {
+	color: #125688;
+	margin: auto;
+	font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+}
+
+.ic-body-card-header-time {
+	margin: auto;
+	font-size: 14px;
+  line-height: 17px;
+	color: #a5a7aa;
+}
+
+
+.ic-body-card-img {
+  background-color: #edeeee;
+	display: block;
+	width: 100%;
+}
+
+.ic-body-card-comments-ctn {
+	padding: 0px 20px 0px 20px;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.ic-body-card-comments-row {
+	color: #4b4f54;
+	font-size: 15px;
+}
+
+.ic-body-card-comments-row:first-child {
+	margin: 18px 0 7px 0;
+}
+
+
+.ic-body-card-comments-row:last-child {
+	border-top: 1px solid #eeefef;
+	margin-top: 13px;
+
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+@media (min-width: 736px) {
+	.ic-body-card-comments-row:last-child {
+		height: 68px;
+	}
+}
+
+@media (max-width: 735px) {
+	.ic-body-card-comments-row:last-child {
+	   height: 48px;
+	}
+	.ic-body-card-ctn:first-child {
+		margin-top: 0px;
+	}
+	.ic-body-card-ctn {
+	 margin-bottom: 10px;		
+	}
+	.ic-body-card-ctn {
+		background-color: #FAFAFA;
+	  border: 1px solid #edeeee;
+	  border-radius: 3px;
+	  margin-bottom: 60px;
+	  margin-left: -1px;
+	  margin-right: -1px;
+	}
+
+}
+
+.ic-body-card-comments-row-likes {
+	font-weight: 600;
+	line-height: 18px;
+}
+
+.ic-body-card-comments-comment-ctn {
+	margin-bottom: 7px;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.ic-body-card-comments-comment {
+	margin-bottom: 7px;
+}
+
+.ic-body-card-comments-comment-name {
+	color: #125688;;
+}
+
+.ic-body-card-comments-input-like {
+	height: 44px;
+	width:40px;
+	background-image: url("instaclone.png");
+	background-position: -172px -97px;
+	background-repeat: no-repeat;
+	background-size: 268px 237px;
+}
+
+.ic-body-card-comments-input-btn {
+	background-color: transparent;
+	outline: none;
+  border: 0;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: -10px;
+  padding: 0;
+	height: 44px;
+	width:40px;
+	background-image: url("instaclone.png");
+	background-position: -172px -52px;
+	background-repeat: no-repeat;
+	background-size: 268px 237px;
+}
+
+.ic-body-card-comments-input-btn,
+.ic-body-card-comments-input-like {
+	margin: auto;
+}
+
+.ic-body-card-comments-input-like,
+.ic-body-card-comments-input-btn {
+	margin-right: 5px;
+	/*height: 40px;*/
+	/*width: 40px;*/
+}
+
+.ic-body-card-comments-input {
+	font-size: 14px;
+	line-height: 17px;
+	margin: auto 0;
+	cursor: auto;
+	border: none;
+	outline: none;
+	padding: 1px;
+	flex: 1;
+}
